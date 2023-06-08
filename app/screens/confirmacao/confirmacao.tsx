@@ -7,6 +7,7 @@ import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 
 import ConfettiCannon from 'react-native-confetti-cannon';
 import { fullPet } from "../../components/petCard";
+import { AdoptedPetsContext } from "../../utils/adoptedPetsContext";
 
 
 export function Confirmacao({ route }: { route: any }): JSX.Element {
@@ -15,6 +16,8 @@ export function Confirmacao({ route }: { route: any }): JSX.Element {
     const insets = useSafeAreaInsets();
 
     const [shoot, setShoot] = React.useState(false);
+
+    const { adoptedPets, setAdoptedPets, addPet } = React.useContext(AdoptedPetsContext);
 
     React.useEffect(() => {
         setShoot(true)
@@ -74,7 +77,10 @@ export function Confirmacao({ route }: { route: any }): JSX.Element {
                 >Em breve entraremos em contato</Text>
             </View>
             <View style={[{ marginHorizontal: 16, justifyContent: "flex-end" }]}>
-                <Button onPress={() => navigation.navigate("Home")} mode="contained">Continuar</Button>
+                <Button onPress={() => {
+                    addPet(pet._id)
+                    navigation.navigate("Home")
+                }} mode="contained">Continuar</Button>
             </View>
         </SafeAreaView>
     )

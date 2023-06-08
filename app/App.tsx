@@ -31,6 +31,7 @@ import { PreferencesContext } from './utils/preferencesContext';
 import { useMaterial3Theme } from '@pchmn/expo-material3-theme';
 import { Form } from './screens/form/form';
 import { Confirmacao } from './screens/confirmacao/confirmacao';
+import { AdoptedPetsContext } from './utils/adoptedPetsContext';
 
 const themeKeyName = "theme";
 
@@ -126,34 +127,42 @@ export default function App(): JSX.Element {
   NavigationBar.setPositionAsync('absolute')
   NavigationBar.setBackgroundColorAsync('transparent')
 
+  const addPet = (id: string) => {
+    setAdoptedPets([...adoptedPets, id]);
+  };
+
+  const [adoptedPets, setAdoptedPets] = React.useState<string[]>([]);
+
   return (
-    <PreferencesContext.Provider value={preferences}>
-      <StatusBar
-        style={isThemeDark(appTheme, colorScheme) ? "light" : "dark"} />
-      <PaperProvider
-        theme={isThemeDark(appTheme, colorScheme) ? CombinedDarkTheme : CombinedDefaultTheme}>
-        <NavigationContainer
+    <AdoptedPetsContext.Provider value={{ adoptedPets, setAdoptedPets, addPet }}>
+      <PreferencesContext.Provider value={preferences}>
+        <StatusBar
+          style={isThemeDark(appTheme, colorScheme) ? "light" : "dark"} />
+        <PaperProvider
           theme={isThemeDark(appTheme, colorScheme) ? CombinedDarkTheme : CombinedDefaultTheme}>
-          <Stack.Navigator
-            initialRouteName='DionisioPet'
-            screenOptions={{
-              header: (props) => <CustomNavigationBar {...props} />,
-            }}
-          >
-            <Stack.Group>
-              <Stack.Screen name="Home" component={Home} />
-              <Stack.Screen name="Detalhes" component={Detalhes} />
-              <Stack.Screen name="Form" component={Form} />
-              <Stack.Screen name="Confirmação" component={Confirmacao} />
-              <Stack.Screen name="Configurações" component={Settings} />
-            </Stack.Group>
-            <Stack.Group screenOptions={{ presentation: 'transparentModal', headerShown: false }}>
-              <Stack.Screen name="SettingsModal" component={SettingsModal} />
-            </Stack.Group>
-          </Stack.Navigator>
-        </NavigationContainer>
-      </PaperProvider>
-    </PreferencesContext.Provider>
+          <NavigationContainer
+            theme={isThemeDark(appTheme, colorScheme) ? CombinedDarkTheme : CombinedDefaultTheme}>
+            <Stack.Navigator
+              initialRouteName='DionisioPet'
+              screenOptions={{
+                header: (props) => <CustomNavigationBar {...props} />,
+              }}
+            >
+              <Stack.Group>
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Detalhes" component={Detalhes} />
+                <Stack.Screen name="Form" component={Form} />
+                <Stack.Screen name="Confirmação" component={Confirmacao} />
+                <Stack.Screen name="Configurações" component={Settings} />
+              </Stack.Group>
+              <Stack.Group screenOptions={{ presentation: 'transparentModal', headerShown: false }}>
+                <Stack.Screen name="SettingsModal" component={SettingsModal} />
+              </Stack.Group>
+            </Stack.Navigator>
+          </NavigationContainer>
+        </PaperProvider>
+      </PreferencesContext.Provider>
+    </AdoptedPetsContext.Provider >
   );
 }
 

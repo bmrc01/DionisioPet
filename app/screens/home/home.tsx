@@ -7,6 +7,7 @@ import axiosClient from "../../utils/apiClient";
 import { SettingsModal } from "../../components/settingsModal";
 import { FilterModal } from "../../components/filtersModal";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { AdoptedPetsContext } from "../../utils/adoptedPetsContext";
 
 type filter = {
     name: string,
@@ -68,6 +69,8 @@ export function PetList({ navigation, tags, setUsableFilters }: { navigation: an
     const [refreshing, setRefreshing] = React.useState<boolean>(false);
     const [filteredPetList, setFiltedPetList] = React.useState<pet[]>([]);
 
+    const { adoptedPets, setAdoptedPets } = React.useContext(AdoptedPetsContext);
+
     const insets = useSafeAreaInsets();
 
     React.useEffect(() => {
@@ -77,11 +80,13 @@ export function PetList({ navigation, tags, setUsableFilters }: { navigation: an
     React.useEffect(() => {
         setFiltedPetList(petList.filter(pet => {
             let petTags: string[] = JSON.parse(pet.tag.toLowerCase())
-
             return petTags.some(item => tags.includes(item.toLowerCase()));
         }))
-        return;
     }, [tags]);
+
+    React.useEffect(() => {
+        setPetList(petList.filter(pet => !adoptedPets.includes(pet._id)))
+    }, [adoptedPets]);
 
     function onRefresh() {
         setRefreshing(true);
