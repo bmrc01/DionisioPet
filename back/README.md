@@ -14,6 +14,7 @@ Siga as etapas abaixo para executar o backend:
 
 1. Clone este repositório.
 2. Navegue até o diretório `back`.
-3. Execute o comando `yarn` ou `npm install` para instalar as dependências.
-4. Crie um arquivo chamado `.env` com a variável `MONGODB_CONNECTION` e insira a string de conexão do banco.
-5. Execute o comando `npm start` para iniciar o backend.
+3. Execute o comando npx tsc para transpilar o código Typescript em Javascript.
+4. Execute o comando `yarn` ou `npm install` para instalar as dependências.
+5. Crie um arquivo chamado `.env` com a variável `MONGODB_CONNECTION` e insira a string de conexão do banco.
+6. Execute o comando `npm start` para iniciar o backend.
