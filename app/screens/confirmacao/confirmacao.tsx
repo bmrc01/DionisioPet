@@ -28,6 +28,17 @@ export function Confirmacao({ route }: { route: any }): JSX.Element {
         navigation.setOptions({ headerShown: false })
     })
 
+    React.useEffect(() => {
+        navigation.addListener("beforeRemove", (e) => {
+            if (e.data.action.type === "GO_BACK") {
+                e.preventDefault();
+                return;
+            }
+
+            navigation.dispatch(e.data.action);
+        })
+    });
+
     return (
         <SafeAreaView style={[{ flex: 1, paddingBottom: insets.bottom }]}>
             {shoot && (<ConfettiCannon
