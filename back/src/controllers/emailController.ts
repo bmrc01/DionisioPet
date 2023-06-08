@@ -12,9 +12,7 @@ const emailController = {
       const { destinatario } = req.body;
 
       if (!destinatario) {
-        res
-          .status(404)
-          .json({ error: 'Você precisa inserir para quem irá o e-mail' });
+        res.status(404).json({ error: 'Você precisa inserir o destinatário.' });
         return;
       }
 
@@ -37,7 +35,7 @@ const emailController = {
       res.status(200).json({ msg: 'E-mail enviado com sucesso.' });
       console.log('E-mail enviado com sucesso!');
     } catch (error) {
-      res.status(500).json({ error: 'Erro em enviar o e-mail' });
+      res.status(500).json({ error: 'Erro em enviar o e-mail.' });
       console.log(error);
     }
   },
