@@ -1,0 +1,1 @@
+Foram feitos dois diagramas UML do projeto, um Diagrama de Caso de Uso para mostrar como o usuário deve utilizar o aplicativo e um Diagrama de Classes com as classes que temos no código.

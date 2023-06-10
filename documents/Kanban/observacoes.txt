@@ -1,0 +1,7 @@
+Na pasta temos três imagens do Kanban do projeto, o software utilizado foi o Trello, onde nos organizamos e designamos as tasks para cada um dos integrantes.
+
+Nas imagens, é possível ver todo o andamento do desenvolvimento do software e todos os cards criados.
+
+Segue abaixo o link para o Trello do projeto, basta pedir permissão que daremos o acesso.
+
+https://trello.com/b/uFEHgAnb/dionisiopet

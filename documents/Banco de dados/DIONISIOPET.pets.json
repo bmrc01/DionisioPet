@@ -1,0 +1,728 @@
+[{
+  "_id": {
+    "$oid": "644710706cabb94bb183c048"
+  },
+  "name": "Plineo",
+  "race": "golden",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://veja.abril.com.br/wp-content/uploads/2017/01/cao-labrador-3-copy.jpg?quality=70&strip=info&w=1280&h=720&crop=1",
+  "createdAt": {
+    "$date": "2023-04-24T23:27:44.122Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T02:00:19.991Z"
+  },
+  "__v": 0,
+  "description": "Um animal muito brincalhão, gosta muito de correr e ir atrás de brinquedos.",
+  "tag": "[ \"Alegre\", \"Brincalhão\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4c14780edc4d0c1b32dd"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T01:59:48.646Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T01:59:48.646Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "644710a86cabb94bb183c04a"
+  },
+  "name": "Lili",
+  "race": "Siamês",
+  "vaccinated": true,
+  "lastVaccineDate": "12-09-2022",
+  "image": "https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia15206/gato-siames.jpg",
+  "createdAt": {
+    "$date": "2023-04-24T23:28:40.056Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T02:01:52.385Z"
+  },
+  "__v": 0,
+  "description": "Um gatinho muito legal e brincalhão, gosta de correr atrás de lã e correr atrás dos seus amigos.",
+  "tag": "[ \"Alegre\", \"Brincalhão\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4c90780edc4d0c1b32e1"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:01:52.385Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:01:52.385Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2022-07-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4c90780edc4d0c1b32e2"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:01:52.385Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:01:52.385Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "644710d26cabb94bb183c04c"
+  },
+  "name": "Brutus",
+  "race": "Labrador",
+  "vaccinated": true,
+  "lastVaccineDate": "24-10-2022",
+  "image": "https://www.clubeparacachorros.com.br/wp-content/uploads/2014/07/labrador-amarelo.jpg",
+  "createdAt": {
+    "$date": "2023-04-24T23:29:22.382Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T02:02:42.075Z"
+  },
+  "__v": 0,
+  "description": "A princípio, parece um pouquinho bravo, mas depois que você o conhece, vira um amor de animal.",
+  "tag": "[ \"Simpático\", \"Amoroso\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4cc2780edc4d0c1b32e4"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:02:42.075Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:02:42.075Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2022-07-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4cc2780edc4d0c1b32e5"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:02:42.075Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:02:42.075Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "644711076cabb94bb183c04e"
+  },
+  "name": "Sergio",
+  "race": "Doberman",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://criandolabrador.com.br/wp-content/uploads/2017/04/8-racas-que-mais-possuem-problemas-de-pele-doberman.jpg",
+  "createdAt": {
+    "$date": "2023-04-24T23:30:15.500Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T02:03:42.528Z"
+  },
+  "__v": 0,
+  "description": "Um Doberman bem sério, perfeito para ser o cachorro defensor da casa.",
+  "tag": "[ \"Amigo\", \"Defensor\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4cfe780edc4d0c1b32e7"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:03:42.528Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:03:42.528Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2022-07-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4cfe780edc4d0c1b32e8"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:03:42.528Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:03:42.528Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6447273c6cabb94bb183c050"
+  },
+  "name": "Doc",
+  "race": "Doberman",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://blog-static.petlove.com.br/wp-content/uploads/2020/10/Doberman-Petlove.jpg",
+  "createdAt": {
+    "$date": "2023-04-25T01:05:00.710Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-30T23:29:33.572Z"
+  },
+  "__v": 0,
+  "description": "Um Doberman muito divertido, gosta de correr, brincar e morder na brincadeira os seus amigos.",
+  "tag": "[ \"Alegre\", \"Brincalhão\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4d15780edc4d0c1b32ea"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:04:05.439Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:04:05.439Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2022-07-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4d15780edc4d0c1b32eb"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:04:05.439Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:04:05.439Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "645c3a0a969925a9ad3fe587"
+  },
+  "name": "Suzi",
+  "race": "Dachshund",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://i0.statig.com.br/bancodeimagens/5o/jy/j1/5ojyj1a512pk0yow7lt74vk81.jpg",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-03-03T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4d5e780edc4d0c1b32f0"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:05:18.927Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:05:18.927Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2022-07-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "645c4d5e780edc4d0c1b32f1"
+      },
+      "createdAt": {
+        "$date": "2023-05-11T02:05:18.927Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-11T02:05:18.927Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-11T00:42:50.319Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T02:05:18.927Z"
+  },
+  "__v": 0,
+  "description": "Meio bravinha, mas depois que se acostumada, adora correr e brincar.\"",
+  "tag": "[ \"Divertido\", \"Corredor\"]"
+},
+{
+  "_id": {
+    "$oid": "6471775420e04695010a6f6f"
+  },
+  "name": "Nasus",
+  "race": "Doberman",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://www.adoropets.com.br/wp-content/uploads/2018/03/doberman-deitado.jpg",
+  "description": "Muito fiel, protetor e gosta muito de banho.",
+  "tag": "[ \"Sério\", \"Amigo\"]",
+  "vaccines": [
+    {
+      "name": "V8",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "6471775420e04695010a6f70"
+      },
+      "createdAt": {
+        "$date": "2023-05-27T03:21:56.335Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-27T03:21:56.335Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "6471775420e04695010a6f71"
+      },
+      "createdAt": {
+        "$date": "2023-05-27T03:21:56.336Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-27T03:21:56.336Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "6471775420e04695010a6f72"
+      },
+      "createdAt": {
+        "$date": "2023-05-27T03:21:56.336Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-27T03:21:56.336Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-27T03:21:56.336Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-27T03:21:56.336Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647687c0f90a41ce72bcd18e"
+  },
+  "name": "Quiara",
+  "race": "Pitbull",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://www.petlove.com.br/images/breeds/193221/profile/original/pitbull-p.jpg?1532539293",
+  "description": "Muito animada, gosta de correr, comer seus ossinhos e morde bastante (na brincadeira)",
+  "tag": "[ \"Animado\", \"Comilão\"]",
+  "vaccines": [
+    {
+      "name": "Giárdia",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "647687c0f90a41ce72bcd18f"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "647687c0f90a41ce72bcd190"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "647687c0f90a41ce72bcd191"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:33:20.818Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-30T23:33:20.819Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-30T23:34:12.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64768856ff8f190c1091d5b4"
+  },
+  "name": "Patricia",
+  "race": "Lulu da Pomerania",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://www.patasdacasa.com.br/sites/patasdacasa/files/styles/webp/public/noticias/2021/09/spitz-preto-preco-caracteristicas-e-personalidade-desse-tipo-de-lulu-da-pomerania.jpg.webp?itok=7Q3paRa9",
+  "description": "Brava, não gosta muito de pessoas novas, meio na dela, mas gosta muito de banho.",
+  "tag": "[ \"bravo\"]",
+  "vaccines": [
+    {
+      "name": "V8 e V10",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "64768856ff8f190c1091d5b5"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:35:50.683Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:35:50.683Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "64768856ff8f190c1091d5b6"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:35:50.684Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:35:50.684Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "64768856ff8f190c1091d5b7"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:35:50.684Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:35:50.684Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-30T23:35:50.684Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-06T23:21:57.299Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647688d7ff8f190c1091d5c4"
+  },
+  "name": "Lefinho",
+  "race": "Pinscher",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://petpillow.com.br/wp-content/uploads/2022/09/Pinscher-1024x683.jpg",
+  "description": "Bem bravinho, não gosta que encoste muito nele de começo, mas depois que pega costume com a pessoa, não sai de perto.",
+  "tag": "[ \"Bravo\", \"Comilão\"]",
+  "vaccines": [
+    {
+      "name": "V8 e V10",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "647688d7ff8f190c1091d5c5"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "647688d7ff8f190c1091d5c6"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "647688d7ff8f190c1091d5c7"
+      },
+      "createdAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      },
+      "updatedAt": {
+        "$date": "2023-05-30T23:37:59.709Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-05-30T23:37:59.710Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-30T23:37:59.710Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647fbef83352e20b6f60dd77"
+  },
+  "name": "Juninho",
+  "race": "lhasa",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://petcaramelo.com/wp-content/uploads/2018/07/lhasa-apson-hoje.jpg",
+  "description": "Calma, porém, gosta de comer coisas de casa.",
+  "tag": "[ \"Calmo\", \"Brincalhão\"]",
+  "vaccines": [
+    {
+      "name": "V8 e V10",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "647fbef83352e20b6f60dd78"
+      },
+      "createdAt": {
+        "$date": "2023-06-06T23:19:20.629Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-06T23:19:20.629Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "647fbef83352e20b6f60dd79"
+      },
+      "createdAt": {
+        "$date": "2023-06-06T23:19:20.629Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-06T23:19:20.629Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-02-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "647fbef83352e20b6f60dd7a"
+      },
+      "createdAt": {
+        "$date": "2023-06-06T23:19:20.630Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-06T23:19:20.630Z"
+      }
+    },
+    {
+      "name": "Filariose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "647fbef83352e20b6f60dd7b"
+      },
+      "createdAt": {
+        "$date": "2023-06-06T23:19:20.630Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-06T23:19:20.630Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-06-06T23:19:20.630Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-06T23:19:20.630Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6484b204773dda1c16ca1979"
+  },
+  "name": "Spyke",
+  "race": "Rottweiler",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://img.freepik.com/fotos-premium/filhote-de-cachorro-rottweiler-na-frente-do-fundo-branco_87557-20447.jpg?w=2000",
+  "description": "Calma, porém, gosta de comer coisas de casa.",
+  "tag": "[ \"Bravo\", \"Brincalhão\"]",
+  "vaccines": [
+    {
+      "name": "V8 e V10",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b204773dda1c16ca197a"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:25:24.790Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:25:24.790Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b204773dda1c16ca197b"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-02-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b204773dda1c16ca197c"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      }
+    },
+    {
+      "name": "Filariose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b204773dda1c16ca197d"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:25:24.791Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-06-10T17:25:24.792Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-10T17:25:24.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6484b26a773dda1c16ca1980"
+  },
+  "name": "Zed",
+  "race": "Buldogue",
+  "vaccinated": true,
+  "lastVaccineDate": "",
+  "image": "https://www.dogvibe.com.br/blog/wp-content/webp-express/webp-images/uploads/2021/06/guia_racas_buldogue_frances.jpg.webp",
+  "description": "Bem agitado, gosta de correr o dia inteiro.",
+  "tag": "[ \"Animado\", \"Corredor\"]",
+  "vaccines": [
+    {
+      "name": "V8 e V10",
+      "vaccineDate": "2023-05-10T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b26a773dda1c16ca1981"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      }
+    },
+    {
+      "name": "Raiva",
+      "vaccineDate": "2023-04-05T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b26a773dda1c16ca1982"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      }
+    },
+    {
+      "name": "Cinomose",
+      "vaccineDate": "2023-02-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b26a773dda1c16ca1983"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:27:06.819Z"
+      }
+    },
+    {
+      "name": "Filariose",
+      "vaccineDate": "2023-05-25T14:30:00.000Z",
+      "_id": {
+        "$oid": "6484b26a773dda1c16ca1984"
+      },
+      "createdAt": {
+        "$date": "2023-06-10T17:27:06.820Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-10T17:27:06.820Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-06-10T17:27:06.820Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-10T17:27:06.820Z"
+  },
+  "__v": 0
+}]

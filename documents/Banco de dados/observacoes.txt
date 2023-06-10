@@ -1,0 +1,8 @@
+O banco de dados do projeto foi feito no MongoDB Atlas, segue na pasta o export do arquivo JSON, CSV e XLSX do DataBase inteiro.
+
+Para fazer a conexão com ele, usamos uma API criada no back-end que faz todo o CRUD dos pets do projeto.
+Hospedamos a API no Fly.io. 
+
+Segue abaixo o endpoint para teste:
+
+https://api-pets.fly.dev/api/pets
