@@ -4,6 +4,7 @@ API que realiza um CRUD de pets no banco de dados MongoDB e faz envio de e-mail 
 
 ## Veja a documentação da API:
 
+A API está hospedada no fly.io, pelo swagger é possível testá-la com os endpoints.
 https://api-pets.fly.dev/doc/
 
 ## Configuração do Ambiente:
