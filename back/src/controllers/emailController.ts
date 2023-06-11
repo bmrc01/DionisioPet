@@ -12,7 +12,7 @@ const emailController = {
       const { destinatario } = req.body;
 
       if (!destinatario) {
-        res.status(404).json({ error: 'Você precisa inserir o destinatário.' });
+        res.status(404).json({ error: 'Você precisa inserir o destinátario' });
         return;
       }
 

@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import swaggerUi from 'swagger-ui-express';
+import swaggerDocument from './swagger.json';
 import { Application } from 'express';
 import conn from './db/conn';
 import routes from './routes/router';
@@ -14,6 +16,7 @@ app.use(express.json());
 conn();
 
 app.use('/api', routes);
+app.use('/doc/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(port, () => {
   console.log('Servidor online, rodando na porta ' + port);

@@ -1,0 +1,611 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+      "title": "API Pets",
+      "description": ""
+  },
+  "servers": [
+      {
+          "url": "https://api-pets.fly.dev/api/",
+          "description": "API Pets"
+      }
+  ],
+  "paths": {
+      "/pets/": {
+          "post": {
+              "summary": "Criar Pet",
+              "description": "Cria um pet na base.",
+              "tags": [
+                  "Pets"
+              ],
+              "requestBody": {
+                  "content": {
+                      "application/json": {
+                          "schema": {
+                              "type": "object",
+                              "properties": {
+                                  "name": {
+                                      "title": "name",
+                                      "type": "string"
+                                  },
+                                  "race": {
+                                      "title": "race",
+                                      "type": "string"
+                                  },
+                                  "vaccinated": {
+                                      "title": "vaccinated",
+                                      "type": "boolean"
+                                  },
+                                  "lastVaccineDate": {
+                                    "title": "lastVaccineDate",
+                                    "type": "string"
+                                  },
+                                  "image": {
+                                      "title": "image",
+                                      "type": "string"
+                                  },
+                                  "description": {
+                                      "title": "description",
+                                      "type": "string"
+                                  },
+                                  "tag": {
+                                    "title": "tag",
+                                    "type": "string"
+                                  },
+                                  "vaccines": {
+                                      "type": "array",
+                                      "items": {
+                                        "properties": {
+                                          "name": {
+                                          "type": "string"
+                                        },
+                                        "vaccineDate": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              },
+              "responses": {
+                  "500": {
+                      "description": "Internal Server Error"
+                  },
+                  "201": {
+                      "description": "Created",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                    "response": {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "race": {
+                                          "type": "string"
+                                        },
+                                        "vaccinated": {
+                                          "type": "boolean"
+                                        },
+                                        "lastVaccineDate": {
+                                          "type": "string"
+                                        },
+                                        "image": {
+                                          "type": "string"
+                                        },
+                                        "description": {
+                                          "type": "string"
+                                        },
+                                        "tag": {
+                                          "type": "string"
+                                        },
+                                        "vaccines": {
+                                          "type": "array",
+                                          "items": {
+                                            "properties": {
+                                              "name": {
+                                              "type": "string"
+                                            },
+                                            "vaccineDate": {
+                                              "type": "string"
+                                            },
+                                            "_id": {
+                                              "type": "string"
+                                            },
+                                            "createdAt": {
+                                              "type": "string"
+                                            },
+                                            "updatedAt": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                        "_id": {
+                                          "type": "string"
+                                        },
+                                        "created_at": {
+                                          "type": "string"
+                                        },
+                                        "updatedAt": {
+                                          "type": "string"
+                                        },
+                                        "__v": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "msg": {
+                                      "type": "string"
+                                    }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      },
+      "/pets/ ": {
+          "get": {
+              "summary": "Buscar todos os pets",
+              "description": "Buscar todos os pets na base",
+              "tags": [
+                  "Pets"
+              ],
+            "responses": {
+                  "500": {
+                      "description": "Internal Server Error"
+                  },
+                  "404": {
+                      "description": "Not found",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                      "msg": {
+                                          "title": "Pet não encontrado.",
+                                          "type": "string"
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "200": {
+                      "description": "OK",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                      "pet": {
+                                          "type": "object",
+                                          "properties": {
+                                            "_id": {
+                                              "type": "string"
+                                            },
+                                            "name": {
+                                              "type": "string"
+                                            },
+                                            "race": {
+                                              "type": "string"
+                                            },
+                                            "vaccinated": {
+                                              "type": "boolean"
+                                            },
+                                            "image": {
+                                              "type": "string"
+                                            },
+                                            "tag": {
+                                              "type": "string"
+                                            }
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      },
+      "/pets/{id}": {
+          "get": {
+              "summary": "Buscar pet por id",
+              "description": "Busca um pet passado por id no path",
+              "tags": [
+                  "Pets"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                  "500": {
+                      "description": "Internal Server Error"
+                  },
+                  "404": {
+                    "description": "Not found",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "msg": {
+                                        "title": "Pet não encontrado.",
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                  "200": {
+                    "description": "OK",
+                    "content": {
+                      "application/json": {
+                          "schema": {
+                              "type": "object",
+                              "properties": {
+                                  "pet": {
+                                      "type": "object",
+                                      "properties": {
+                                        "_id": {
+                                          "type": "string"
+                                        },
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "race": {
+                                          "type": "string"
+                                        },
+                                        "vaccinated": {
+                                          "type": "boolean"
+                                        },
+                                        "lastVaccineDate": {
+                                          "type": "string"
+                                        },
+                                        "image": {
+                                          "type": "string"
+                                        },
+                                        "description": {
+                                          "type": "string"
+                                        },
+                                        "tag": {
+                                          "type": "string"
+                                        },
+                                        "vaccines": {
+                                          "type": "array",
+                                          "items": {
+                                            "properties": {
+                                              "name": {
+                                              "type": "string"
+                                            },
+                                            "vaccineDate": {
+                                              "type": "string"
+                                            },
+                                            "_id": {
+                                              "type": "string"
+                                            },
+                                            "createdAt": {
+                                              "type": "string"
+                                            },
+                                            "updatedAt": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                        },
+                                        "created_at": {
+                                          "type": "string"
+                                        },
+                                        "updatedAt": {
+                                          "type": "string"
+                                        },
+                                        "__v": {
+                                          "type": "number"
+                                        }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+                    }
+              }
+          }
+      },
+      "/pets/{id} ": {
+          "delete": {
+              "summary": "Apagar um pet",
+              "description": "Apaga um pet na base.",
+              "tags": [
+                  "Pets"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                  "500": {
+                      "description": "Internal Server Error"
+                  },
+                  "404": {
+                    "description": "Not found",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "msg": {
+                                        "title": "Pet não encontrado.",
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                  "200": {
+                      "description": "OK",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                      "msg": {
+                                        "title": "Pet excluído com sucesso.",
+                                        "type": "string"
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      },
+      "/pets/{id}  ": {
+          "put": {
+              "summary": "Atualizar pet",
+              "description": "Atualiza um pet na base.",
+              "tags": [
+                  "Pets"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "requestBody": {
+                  "content": {
+                      "application/json": {
+                          "schema": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                    "title": "name",
+                                    "type": "string"
+                                },
+                                "race": {
+                                    "title": "race",
+                                    "type": "string"
+                                },
+                                "vaccinated": {
+                                    "title": "vaccinated",
+                                    "type": "boolean"
+                                },
+                                "lastVaccineDate": {
+                                  "title": "lastVaccineDate",
+                                  "type": "string"
+                                },
+                                "image": {
+                                    "title": "image",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "title": "description",
+                                    "type": "string"
+                                },
+                                "tag": {
+                                  "title": "tag",
+                                  "type": "string"
+                                },
+                                "vaccines": {
+                                      "type": "array",
+                                      "items": {
+                                        "properties": {
+                                          "name": {
+                                          "type": "string"
+                                        },
+                                          "vaccineDate": {
+                                            "type": "string"
+                                          }
+                                      }
+                                    }
+                                  }
+                            }
+                          }
+                      }
+                  }
+              },
+              "responses": {
+                  "500": {
+                      "description": "Internal Server Error"
+                  },
+                  "404": {
+                    "description": "Not found",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "msg": {
+                                        "title": "Pet não encontrado.",
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  },
+                  "200": {
+                      "description": "OK",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                    "pet": {
+                                      "type": "object",
+                                      "properties": {
+                                        "_id": {
+                                          "type": "string"
+                                        },
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "race": {
+                                          "type": "string"
+                                        },
+                                        "vaccinated": {
+                                          "type": "boolean"
+                                        },
+                                        "lastVaccineDate": {
+                                          "type": "string"
+                                        },
+                                        "image": {
+                                          "type": "string"
+                                        },
+                                        "description": {
+                                          "type": "string"
+                                        },
+                                        "tag": {
+                                          "type": "string"
+                                        },
+                                        "vaccines": {
+                                          "type": "array",
+                                          "items": {
+                                            "properties": {
+                                              "name": {
+                                              "type": "string"
+                                            },
+                                            "vaccineDate": {
+                                              "type": "string"
+                                            },
+                                            "_id": {
+                                              "type": "string"
+                                            },
+                                            "createdAt": {
+                                              "type": "string"
+                                            },
+                                            "updatedAt": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                        },
+                                        "created_at": {
+                                          "type": "string"
+                                        },
+                                        "updatedAt": {
+                                          "type": "string"
+                                        },
+                                        "__v": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "msg": {
+                                      "type": "string"
+                                    }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      },
+      "/email/": {
+        "post": {
+            "summary": "Enviar e-mail",
+            "description": "Envia um e-mail do gmail do dionisioPet para um destinatário definido.",
+            "tags": [
+                "E-mail"
+            ],
+            "requestBody": {
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "destinatario": {
+                                  "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "responses": {
+                "500": {
+                    "description": "Internal Server Error",
+                    "content": {
+                      "application/json": {
+                          "schema": {
+                              "type": "object",
+                              "properties": {
+                                  "error": {
+                                      "type": "string"
+                                  }
+                              }
+                          }
+                      }
+                  }
+                },
+                "200": {
+                    "description": "OK",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "msg": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
