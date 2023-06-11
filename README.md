@@ -13,5 +13,5 @@ O DionisioPet é um aplicativo para amantes de pets, que querem encontrar seu pe
 
 ## Documentação
 
-- [Documentação do App](./app/readme.md)
-- [Documentação do Backend](./back/readme.md)
+- [Documentação do App](./app/README.md)
+- [Documentação do Backend](./back/README.md)
