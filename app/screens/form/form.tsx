@@ -34,6 +34,7 @@ export function Form({ route }: { route: any }): JSX.Element {
     const [birthday, setBirthday] = React.useState<string>("");
     const [gender, setGender] = React.useState<string>("");
     const [deficiencias, setDeficiencias] = React.useState<string>("");
+    const [email, setEmail] = React.useState<string>("");
 
     React.useEffect(() => {
         navigation.setOptions({ title: 'Formulario' })
@@ -68,7 +69,7 @@ export function Form({ route }: { route: any }): JSX.Element {
                         <Button onPress={() => setDialogVisible(false)}>Não</Button>
                         <Button onPress={() => {
                             setDialogVisible(false)
-                            navigation.navigate("Confirmação", { pet: pet })
+                            navigation.navigate("Confirmação", { pet: pet, email: email })
                         }}
                         >Sim</Button>
                     </Dialog.Actions>
@@ -77,7 +78,7 @@ export function Form({ route }: { route: any }): JSX.Element {
             <Surface mode="flat" style={{ margin: 8, paddingHorizontal: 8, paddingBottom: 8, borderRadius: 8 }}>
                 <Text style={{ margin: 8 }}>Informações de contato</Text>
                 <TextInput style={styles.input} label="Nome" mode="outlined" />
-                <TextInput style={styles.input} label="E-mail" mode="outlined" />
+                <TextInput style={styles.input} onChangeText={(value) => setEmail(value)} label="E-mail" mode="outlined" />
                 <TextInput style={styles.input} label="Celular" mode="outlined" />
             </Surface >
 

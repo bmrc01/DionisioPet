@@ -8,10 +8,10 @@ import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import ConfettiCannon from 'react-native-confetti-cannon';
 import { fullPet } from "../../components/petCard";
 import { AdoptedPetsContext } from "../../utils/adoptedPetsContext";
-
+import axiosClient from "../../utils/apiClient";
 
 export function Confirmacao({ route }: { route: any }): JSX.Element {
-    const { pet }: { pet: fullPet } = route.params;
+    const { pet, email }: { pet: fullPet, email: string } = route.params;
     const navigation = useNavigation();
     const insets = useSafeAreaInsets();
 
@@ -20,16 +20,27 @@ export function Confirmacao({ route }: { route: any }): JSX.Element {
     const { adoptedPets, setAdoptedPets, addPet } = React.useContext(AdoptedPetsContext);
 
     React.useEffect(() => {
+        navigation.setOptions({ headerShown: false })
+
+        async function sendEmail() {
+            try {
+                console.log(email);
+                const response = await axiosClient.post('/email', { destinatario: email })
+                console.log(response);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        //Send e-mail via api
+        sendEmail();
+    }, [])
+
+    React.useEffect(() => {
         setShoot(true)
     }, [shoot]);
 
-
     const windowWidth = Dimensions.get('window').width;
     const windowHeight = Dimensions.get('window').height;
-
-    React.useEffect(() => {
-        navigation.setOptions({ headerShown: false })
-    })
 
     React.useEffect(() => {
         navigation.addListener("beforeRemove", (e) => {
