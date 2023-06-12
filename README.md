@@ -1,7 +1,5 @@
 # DionisioPet
 
-![Logo DionisioPet](play_store_feature_graphic.png)
-
 Este é o repositório do aplicativo DionisioPet, desenvolvido usando React Native e Expo.
 
 ## Sobre o Projeto
