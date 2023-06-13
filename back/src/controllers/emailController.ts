@@ -16,6 +16,8 @@ const emailController = {
         return;
       }
 
+      const nomeDestinatario = destinatario.split('@')[0];
+
       const transporter: Transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
@@ -30,6 +32,17 @@ const emailController = {
         to: destinatario,
         subject: emailObject.subject,
         text: emailObject.message,
+        html: `
+        <h1>Olá ${nomeDestinatario}</h1>
+        <p>Vimos que você gostou de um dos nossos pets, vamos analisar o seu cadastro e logo entraremos em contato 😉</p>
+        <img src="cid:unique@kreata.ee"/>`,
+        attachments: [
+          {
+            filename: 'dionisiopet.png',
+            path: 'src/images/dionisiopet.png',
+            cid: 'unique@kreata.ee',
+          },
+        ],
       };
       await transporter.sendMail(emailOptions);
       res.status(200).json({ msg: 'E-mail enviado com sucesso.' });
