@@ -4,6 +4,7 @@
 
 Este é o repositório do aplicativo DionisioPet, desenvolvido usando React Native e Expo.
 
+# [Download](https://github.com/bmrc01/DionisioPet/releases/download/1.1.0/DionisioPet.-.1.1.0.apk) 
 ## Sobre o Projeto
 ---
 ### [Vídeo de apresentação](https://youtu.be/G8rjTzWB_6s)
